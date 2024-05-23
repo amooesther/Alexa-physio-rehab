@@ -9,6 +9,10 @@ const NavBar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div className='NavWrapper'>
       <img src={logo} alt="Logo" className="logo" />
@@ -17,10 +21,10 @@ const NavBar = () => {
       </button>
       <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" onClick={closeMenu}>Home</a></li>
+          <li><a href="#" onClick={closeMenu}>About</a></li>
+          <li><a href="#" onClick={closeMenu}>Services</a></li>
+          <li><a href="#" onClick={closeMenu}>Contact</a></li>
           <button className='loginBtn'>Login</button>
         </ul>
       </nav>
