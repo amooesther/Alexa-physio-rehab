@@ -1,0 +1,137 @@
+
+.serviceWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .serviceCard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  
+  .card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .card h3 {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+  
+  .card p {
+    margin-bottom: 100px;
+  }
+  
+ 
+  .card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .landingWrapper {
+    width: 90vw;
+    margin: 40px auto;
+  }
+  
+  .landing {
+    display: flex;
+    gap: 100px;
+    margin-left: 40px;
+  }
+  
+  .landingWrapper h3 {
+    color: #23408e;
+    width: 600px;
+    margin-left: 300px;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  
+  .h3Span {
+    margin-left: 150px;
+  }
+  
+  .choose img {
+    margin-left: 50px;
+  }
+  
+  .choose p {
+    color: #23408e;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 50px;
+    margin-top: 40px;
+  }
+  
+  .chooseUs {
+    display: flex;
+    gap: 300px;
+    margin-top: 40px;
+  }
+  
+  .chooseTwo {
+    margin-top: 15px;
+    width: 400px;
+    color: #23408e;
+    line-height: 2;
+  }
+  
+  .chooseTwo p {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  .chooseUs li {
+    list-style: square;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .serviceCard {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  
+    .landingWrapper h3 {
+      width: auto;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .landing {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      margin-left: 0;
+    }
+  
+    .choose p {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .choose img {
+      margin-left: 0;
+    }
+  
+    .chooseUs {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .chooseTwo {
+      width: auto;
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+  
