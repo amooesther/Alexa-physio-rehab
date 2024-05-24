@@ -1,0 +1,99 @@
+.aboutWrapper {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .aboutUp {
+    position: relative;
+    margin: 20px auto;
+    max-width: 100%;
+    overflow: hidden;
+    color: white;
+  }
+  
+  .aboutUp img {
+    width: 100vw;
+    height: 60vh; /* Adjusted height */
+    object-fit: cover;
+  }
+  
+  .aboutUp h4,
+  .aboutUp h2 {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  .aboutUp h4 {
+    top: 30%;
+    font-size: 24px;
+    color: #6fff00;
+  }
+  
+  .aboutUp h2 {
+    top: 40%;
+    font-size: 28px;
+    color: #23408e;
+  }
+  
+  .card {
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: -60px auto 20px; /* Positioned above the image */
+    max-width: 800px;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #23408e;
+  }
+  
+  /* Media query for tablets and smaller screens */
+  @media (max-width: 768px) {
+    .aboutUp h4 {
+      font-size: 20px;
+    }
+  
+    .aboutUp h2 {
+      font-size: 24px;
+    }
+  
+    .card {
+      margin: -40px auto 20px;
+      padding: 15px;
+    }
+  
+    .card p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Media query for mobile screens */
+  @media (max-width: 480px) {
+    .aboutUp h4 {
+      font-size: 18px;
+    }
+  
+    .aboutUp h2 {
+      font-size: 20px;
+    }
+  
+    .card {
+      margin: -30px auto 20px;
+      padding: 10px;
+    }
+  
+    .card p {
+      font-size: 12px;
+    }
+  }
+  

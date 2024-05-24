@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../../Assets/logo192.png';
 import "./NavBar.css"
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,11 +22,11 @@ const NavBar = () => {
       </button>
       <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
         <ul>
-          <li><a href="#" onClick={closeMenu}>Home</a></li>
-          <li><a href="#" onClick={closeMenu}>About</a></li>
-          <li><a href="#" onClick={closeMenu}>Services</a></li>
-          <li><a href="#" onClick={closeMenu}>Contact</a></li>
-          <button className='loginBtn'>Login</button>
+        <Link to='/' style={{ textDecoration: 'none' }}><li><a href="#" onClick={closeMenu}>Home</a></li></Link>
+          <Link to='/about' style={{ textDecoration: 'none' }}><li><a href="#" onClick={closeMenu}>About</a></li></Link>
+          <Link to='/services' style={{ textDecoration: 'none' }}><li><a href="#" onClick={closeMenu}>Services</a></li></Link>
+         <Link to='/contact' style={{ textDecoration: 'none' }}> <li><a href="#" onClick={closeMenu}>Contact</a></li></Link>
+         <Link to='/login' style={{ textDecoration: 'none' }}> <button className='loginBtn'>Login</button></Link>
         </ul>
       </nav>
     </div>
