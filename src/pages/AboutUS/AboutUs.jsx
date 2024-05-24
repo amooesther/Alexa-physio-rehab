@@ -2,7 +2,7 @@ import React from 'react';
 import './AboutUs.css';
 import NavBar from "../../components/NavBar/NavBar.jsx";
 import aboutUs from '../../Assets/aboutUs.jpg';
-import UserAvatar from ''
+
 
 const AboutUs = () => {
   return (
