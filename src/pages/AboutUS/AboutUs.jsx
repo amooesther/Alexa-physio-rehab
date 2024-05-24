@@ -6,8 +6,10 @@ import aboutUs from '../../Assets/aboutUs.jpg';
 
 const AboutUs = () => {
   return (
-    <div className='aboutWrapper'>
+    <div>
       <NavBar />
+    <div className='aboutWrapper'>
+      
       <div className='aboutUp'>
         <img src={aboutUs} alt="About Us" />
         <h4>Alexa Physiotherapy and Rehabilitation Clinic</h4>
@@ -30,6 +32,7 @@ Our state-of-the-art facilities and innovative therapeutic techniques are design
           <div></div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
