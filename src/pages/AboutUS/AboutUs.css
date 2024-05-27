@@ -14,8 +14,8 @@
   
   .aboutUp img {
     width: 100vw;
-    height: 60vh; /* Adjusted height */
-    object-fit: cover;
+    height: 100vh; /* Adjusted height */
+    object-fit: fill;
   }
   
   .aboutUp h4,
@@ -40,7 +40,7 @@
     color: #23408e;
   }
   
-  .card {
+  .cards {
     background-color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -56,6 +56,84 @@
     line-height: 1.5;
     color: #23408e;
   }
+  .alexaCEO {
+    display: flex;   
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #6fff00;
+    color: #23408e;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    flex-wrap: wrap; /* Ensures flex items wrap on smaller screens */
+  }
+  
+  .imageContainer {
+    margin-right: 20px;
+  }
+  
+  .imageBackground {
+    padding: 20px;
+    margin-left: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .imageBackground img {
+    max-width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ceo p {
+    font-size: 25px;
+    margin: 10px 0 5px;
+  }
+  
+  .ceo span {
+    font-size: 15px;
+    display: block;
+  }
+  
+  .textContainer {
+   
+    width: calc(80% - 240px); /* Ensures text container doesn't overlap with image */
+    margin-left: 20px;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    .imageBackground img {
+      max-width: 150px;
+    }
+  
+    .textContainer {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .imageBackground img {
+      max-width: 100px;
+    }
+  
+    .ceo p {
+      font-size: 20px;
+    }
+  
+    .ceo span {
+      font-size: 12px;
+    }
+  
+    .textContainer {
+      font-size: 14px;
+    }
+  }
+  
+  
   
   /* Media query for tablets and smaller screens */
   @media (max-width: 768px) {
@@ -67,12 +145,12 @@
       font-size: 24px;
     }
   
-    .card {
+    .cards {
       margin: -40px auto 20px;
       padding: 15px;
     }
   
-    .card p {
+    .cards p {
       font-size: 14px;
     }
   }
@@ -87,12 +165,12 @@
       font-size: 20px;
     }
   
-    .card {
+    .cards {
       margin: -30px auto 20px;
       padding: 10px;
     }
   
-    .card p {
+    .cards p {
       font-size: 12px;
     }
   }

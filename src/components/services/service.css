@@ -18,14 +18,12 @@
 
 /* service.css */
 
-/* Base styles for serviceWrapper */
 .serviceWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
-  /* Base styles for serviceCard */
+
   .serviceCard {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -33,7 +31,7 @@
     margin-top: 20px;
   }
   
-  /* Base styles for card */
+ 
   .card {
     background-color: #f0f0f0;
     padding: 20px;
@@ -41,7 +39,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  /* Styles for card content */
+ 
   .card h3 {
     margin-top: 0;
   }
@@ -50,7 +48,6 @@
     margin-bottom: 0;
   }
   
-  /* Styles for card images */
   .card img {
     width: 100%;
     margin-top: 30px;
