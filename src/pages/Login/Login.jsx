@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Login.css';
 import { Link } from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar.jsx'
+import { FaGoogle } from 'react-icons/fa';
 
 
 const Login = () => {
@@ -38,7 +39,10 @@ const Login = () => {
             required 
           />
         </div>
+        <div className='bttns'>
         <button type="submit" className="form-button">Login</button>
+        <button className='google'><FaGoogle /> Login with Google</button>
+        </div>
       <Link to='/signup'>  <p className='signUp'>SignUp</p></Link>
       </form>
     </div>

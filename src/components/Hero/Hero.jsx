@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import heroPicture from "../../Assets/heroPicture.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
           A conservative way of treatment, guiding you towards optimal health
           and well-being
         </p>
-        <button className="heroBtn">Book Appointment</button>
+    <Link to="/appointments">  <button className="heroBtn">Book Appointment</button></Link>  
       </div>
     </div>
   );

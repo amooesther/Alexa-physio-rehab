@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './Login.css';
 import NavBar from '../../components/NavBar/NavBar.jsx'
+import { FaGoogle } from 'react-icons/fa';
+
+
 
 
 
@@ -48,7 +51,10 @@ const Signup = () => {
             required 
           />
         </div>
-        <button type="submit" className="form-button">Signup</button>
+        <div className='bttns'>
+        <button type="submit" className="form-button" >Signup</button>
+        <button className='google'><FaGoogle /> Signup with Google</button>
+        </div>
       </form>
     </div>
     </div>

@@ -54,7 +54,32 @@
     background-color: #23408e;
     color: #6fff00;
   }
+.bttns{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.google{
+  background-color: white;
+  color: #23408e;
+  border: 2px solid #23408e;
 
+}
+.google:hover{
+  background-color: #6fff00;
+ 
+}
+.googleIcon{
+  width: 25px;
+  height: 25px;
+  margin-top: 17px;
+
+}
+.buttonContent{
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
   .signUp{
     color: #23408e;
     text-align: right;
