@@ -61,20 +61,16 @@
 }
 .google{
   background-color: white;
-  color: #23408e;
-  border: 2px solid #23408e;
-
+  height: 80px;
+  width: 100px;
+  cursor: pointer;
+  margin-left: 100px;
 }
 .google:hover{
   background-color: #6fff00;
  
 }
-.googleIcon{
-  width: 25px;
-  height: 25px;
-  margin-top: 17px;
 
-}
 .buttonContent{
   display: flex;
   gap: 20px;

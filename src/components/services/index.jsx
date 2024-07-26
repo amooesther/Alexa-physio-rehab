@@ -1,67 +1,54 @@
-import React from 'react'
-import './service.css'
-import alexa3 from '../../Assets/alexa3.jpg'
+import React from 'react';
+import './service.css';
+import Time from '../../Assets/Time.jpg'
+import Knowledge from '../../Assets/Knowledge.jpg'
+import Environment from '../../Assets/environment.jpg'
+import Attention from '../../Assets/attention.jpg'
+import physio from '../../Assets/physio.jpg'
+
 
 const Service = () => {
   return (
-    <div className='serviceWrapper'>
-        <h2>Our Services</h2>
-     <div className='serviceCard'>
-     <div className='card'>
-    <h3>Rehabilitation</h3>
-    <p>At our clinic, we prioritize comprehensive care for our patients by focusing on a multi-faceted approach to health and wellness. We address fundamental health issues by diagnosing and treating basic diseases, ensuring that complications are prevented through proactive care and regular monitoring. For those with disabilities, we provide targeted treatments aimed at improving physical and cognitive functions, thereby enhancing overall quality of life.</p>
+   <div className='serviceContainer'>
+    <div className='serviceLeft'>
+    <div>
+    <h2>We are not your usual physiotherapy clinic</h2>
+    <p>We are the best at what we do</p>
+  </div>
+  <div>
+    <img src={physio} alt="Alexa" />
+  </div>
+    </div>
 
-    <img src={alexa3} alt="" />
+    <div className='serviceRight'>
+    <div>
+    <img src={Time} alt="Quality Time" />
+    <h3>Quality Time</h3>  
+    <p>Your physiotherapy session is spent one-on-one with your physiotherapist and not the assistant for maximum comfort and security.</p>
+  </div>
+  <div>
+  <img src={Knowledge} alt="Deep Knowledge" />
+    <h3>Professional and Qualified Staffs</h3>   
+    <p>Our professional and qualified staff are adept at diagnosing and treating a wide range of musculoskeletal, neurological, and cardiovascular conditions. Our expertise includes advanced therapeutic techniques, pain management, and rehabilitation protocols tailored to individual patient needs.</p>
 
-</div>
-<div className='card'>
-    
-    <h3>Community Physiotherapy</h3>
-    <p>
-We provide Community physiotherapy service treatment and rehabilitation in local settings outside of hospitals, such as in patients' homes, community centers, or clinics. It aims to improve the physical health and mobility of individuals through personalized exercise programs, education, and hands-on therapy. This service is especially beneficial for those with chronic conditions, disabilities, or post-surgical needs who may have difficulty accessing traditional hospital-based care. </p>
+  </div>
+  <div>
+  <img src={Environment} alt="Customer Service" />
+    <h3>A Well Relaxed Environment</h3>  
+    <p>Experience the benefits of a well-relaxed environment designed to enhance your recovery. Our clinic provides a tranquil and comfortable setting, ensuring that your physiotherapy sessions are as calming and effective as possible.</p>
 
-    <img src={alexa3} alt="" />
-
-</div>
-
-
-
-<div className='card'>
-    <h3>Orthopedic Physiotherapy</h3>
-    <p>Our orthopedic physiotherapy service diagnoses, manages, and treats musculoskeletal disorders and injuries, including those affecting bones, joints, muscles, ligaments, and tendons. We aim to restore function, reduce pain, and improve mobility using techniques like manual therapy, exercise, and education. We cater to those recovering from surgeries, sports injuries, fractures, or chronic conditions like arthritis, offering personalized treatment and rehabilitation plans.</p>
-
-    <img src={alexa3} alt="" />
-
-</div>
-
-<div className='card'>
-    <h3>Neurology Physiotherapy</h3>
-    <p>Our neurology physiotherapy service treats neurological conditions like stroke, multiple sclerosis, Parkinson's disease, and spinal cord injuries. We enhance mobility, improve strength, and promote independence through tailored exercises, balance training, and neuro-rehabilitation techniques, helping patients regain abilities, manage symptoms, and adapt to lifestyle changes.</p>
-
-    <img src={alexa3} alt="" />
-
-</div>
-
-<div className='card'>
-    <h3>Pediatrics Physiotherapy</h3>
-    <p>Our Pediatrics physiotherapy service focuses on assessing and treating children with developmental, neurological, and musculoskeletal conditions. The goal is to improve physical function, enhance motor skills, and support overall development through age-appropriate therapeutic exercises, play-based activities, and family education. This service helps children achieve their maximum potential, promoting independence and improving their quality of life</p>
-
-    <img src={alexa3} alt="" />
-
-</div>
-<div className='card'>
-    <h3>Geriatric Physiotherapy</h3>
-    <p>Our Geriatric physiotherapy service specializes in treating older adults, addressing age-related conditions such as arthritis, osteoporosis, balance disorders, and post-surgical recovery. The goal is to improve mobility, reduce pain, and enhance overall physical function through personalized exercises, manual therapy, and education. This service helps seniors maintain independence, prevent falls, and improve their quality of life.</p>
-
-    <img src={alexa3} alt="" />
-
-</div>
-
-</div>   
-
+  </div>
+  <div>
+  <img src={Attention} alt="Personal Attention" />
+    <h3>Personal Attention</h3>   
+    <p>We aim to exceed your expectations. Our clinical and administrative staff will not rest until we have gone the extra mile to meet all your needs.</p>
+  </div>
 
     </div>
-  )
+   </div>
+  );
 }
 
 export default Service;
+
+

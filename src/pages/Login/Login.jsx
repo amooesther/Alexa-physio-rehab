@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Login.css';
 import { Link } from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar.jsx'
-import { FaGoogle } from 'react-icons/fa';
+import google from '../../Assets/google.png';
 import { signInWithEmailAndPassword } from 'firebase/auth'; 
 import { auth } from '../../components/firebase.js'; 
 
@@ -51,7 +51,8 @@ const Login = () => {
             </div>
             <div className='bttns'>
               <button type="submit" className="form-button">Login</button>
-              <button className='google'><FaGoogle /> Login with Google</button>
+              <p>Or Login with</p>
+               <img src={google} alt="" className='google' />
             </div>
             <Link to='/signup'>  <p className='signUp'>SignUp</p></Link>
           </form>

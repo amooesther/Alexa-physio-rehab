@@ -1,56 +1,52 @@
-/* .serviceCard {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr)); 
-    display: flex; 
-    flex-wrap: wrap;
+
+.serviceContainer{
+  height: auto;
+  margin: auto;
+  display: flex;
+  gap: 60px;
+  margin-top: 30px;
+  color: #161616da;
+}
+.serviceRight{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+
+ 
+}
+.serviceRight h3{
+  color:#23408e ;
+  font-size: 25px;
+}
+.serviceRight div{
+  height: auto;
+  width: 350px;  
+  padding: 15px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.serviceRight img{
+  height: 95px;
+  width: 100px;
+}
+.serviceLeft{
+  width: 350px;
+  margin-left: 15px;
+  
+}
+.serviceLeft h2{
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 100px;
+  margin-left: 50px;
+}
+.serviceLeft p{
+  font-size: 18px;
+  margin-left: 70px;
+}
+.serviceLeft img{
+  margin-top: 150px;
+  border-radius: 20px;
+  
 }
 
-.card{
-    width: 250px;
-    height: 300px;
-    margin-bottom: 80px;
-}
-.card img{
-    width: 100%;
-    height: 50%;
-    margin-bottom: 40px;
-} */
-
-/* service.css */
-
-.serviceWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .serviceCard {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
- 
-  .card {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
- 
-  .card h3 {
-    margin-top: 0;
-  }
-  
-  .card p {
-    margin-bottom: 0;
-  }
-  
-  .card img {
-    width: 100%;
-    margin-top: 30px;
-    border-radius: 5px;
-  }
-  
